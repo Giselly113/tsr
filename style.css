@@ -1,0 +1,260 @@
+/* Estilo do Banner */
+.banner {
+    width: 100%;
+    height: 200px; /* Tamanho reduzido */
+    overflow: hidden;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Barra de Navegação */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px; /* Reduzido */
+    background-color: #055dd1;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 1.2em; /* Reduzido */
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Filtros e Categorias */
+.filtros {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.filtro-categorias select {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Grade de Produtos */
+.grid-promocoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* Promoções */
+.promocao {
+    background-color: #ffffff;
+    padding: 10px; /* Ajustado */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px; /* Reduzido */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative; /* Necessário para posicionar elementos internos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.promocao:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem do Produto */
+.promocao img {
+    width: 100%;
+    height: 120px; /* Reduzido */
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Título do Produto */
+.promocao h3 {
+    font-size: 1em; /* Reduzido */
+    margin: 10px 0;
+    color: #055dd1;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Preço */
+.promocao .preco {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Botões */
+.btn-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .btn-container {
+        flex-direction: row;
+    }
+}
+
+.btn-comprar, .btn-copiar {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-comprar {
+    background: linear-gradient(45deg, #0057ff, #4a90e2);
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-comprar:hover {
+    background: linear-gradient(45deg, #003bb5, #1a73e8);
+    transform: scale(1.05);
+}
+
+.btn-copiar {
+    background: linear-gradient(45deg, #28a745, #45c762);
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-copiar:hover {
+    background: linear-gradient(45deg, #1d8c38, #38b547);
+    transform: scale(1.05);
+}
+
+/* Logo no Rodapé do Card */
+.btn-logo {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30px; /* Reduzido */
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Rodapé */
+footer {
+    padding: 15px; /* Ajustado */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer .footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer .footer-links a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    color: #0057ff;
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+/* Grade de Produtos */
+.grid-promocoes {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna por padrão */
+    gap: 15px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* Responsividade para duas colunas em telas menores */
+@media (min-width: 480px) {
+    .grid-promocoes {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    }
+}
+
+/* Responsividade para telas médias e grandes */
+@media (min-width: 768px) {
+    .grid-promocoes {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas continuam */
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-promocoes {
+        grid-template-columns: repeat(3, 1fr); /* Três colunas em telas maiores */
+    }
+}
